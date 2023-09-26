@@ -3,12 +3,8 @@ on:
     branches:
       - main
 
-defaults:
-  run:
-    working-directory: ./
-
 jobs:
-  build-deploy:
+  log-buckets-aws-s3:
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS Credentials
